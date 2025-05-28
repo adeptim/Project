@@ -1,0 +1,10 @@
+^C:\USERS\VOLDE\DOCUMENTS\PLATFORMIO\PROJECTS\CAR\BUILD\CMAKEFILES\9134F8C499A5692FEFD2058BC9C174CC\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/volde/Documents/PlatformIO/Projects/Car -BC:/Users/volde/Documents/PlatformIO/Projects/Car/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/volde/Documents/PlatformIO/Projects/Car/build/car.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

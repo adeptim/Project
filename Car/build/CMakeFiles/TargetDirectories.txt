@@ -1,0 +1,3 @@
+C:/Users/volde/Documents/PlatformIO/Projects/Car/build/CMakeFiles/car_class.dir
+C:/Users/volde/Documents/PlatformIO/Projects/Car/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/volde/Documents/PlatformIO/Projects/Car/build/CMakeFiles/ZERO_CHECK.dir

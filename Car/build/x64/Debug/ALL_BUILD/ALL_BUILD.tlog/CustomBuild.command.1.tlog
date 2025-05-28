@@ -1,0 +1,10 @@
+^C:\USERS\VOLDE\DOCUMENTS\PLATFORMIO\PROJECTS\CAR\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/volde/Documents/PlatformIO/Projects/Car -BC:/Users/volde/Documents/PlatformIO/Projects/Car/build --check-stamp-file C:/Users/volde/Documents/PlatformIO/Projects/Car/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
