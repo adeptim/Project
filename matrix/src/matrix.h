@@ -27,5 +27,6 @@ namespace math
         friend Matrix operator-(const Matrix& A, const Matrix& B);
 
         friend Matrix operator*(const Matrix& A, const Matrix& B);
+  Matrix& operator+=(const Matrix& M);
     };
 } // namespace math

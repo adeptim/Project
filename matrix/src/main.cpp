@@ -32,6 +32,7 @@ int main()
               << "Multiplication of matrices m and m1 is:" << std::endl;
     math::Matrix m4 = m * m1;
     m4.print();
-
+m4+=m2;
+m4.print();
     return 0;
 }

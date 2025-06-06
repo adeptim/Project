@@ -1,0 +1,73 @@
+.TH "math::Matrix" 3 "Version 000" "Matrix" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+math::Matrix
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <matrix\&.h>\fP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBMatrix\fP ()"
+.br
+.ti -1c
+.RI "\fBMatrix\fP (int rows, int cols)"
+.br
+.ti -1c
+.RI "\fBreal\fP & \fBoperator()\fP (int row, int col)"
+.br
+.ti -1c
+.RI "\fBreal\fP \fBoperator()\fP (int row, int col) const"
+.br
+.ti -1c
+.RI "void \fBprint\fP ()"
+.br
+.ti -1c
+.RI "\fBMatrix\fP & \fBoperator+=\fP (const \fBMatrix\fP &M)"
+.br
+.in -1c
+.SS "Друзья"
+
+.in +1c
+.ti -1c
+.RI "\fBMatrix\fP \fBoperator+\fP (const \fBMatrix\fP &A, const \fBMatrix\fP &B)"
+.br
+.ti -1c
+.RI "\fBMatrix\fP \fBoperator\-\fP (const \fBMatrix\fP &A, const \fBMatrix\fP &B)"
+.br
+.ti -1c
+.RI "\fBMatrix\fP \fBoperator*\fP (const \fBMatrix\fP &A, const \fBMatrix\fP &B)"
+.br
+.in -1c
+.SH "Конструктор(ы)"
+.PP 
+.SS "math::Matrix::Matrix ()\fR [inline]\fP"
+
+.SS "math::Matrix::Matrix (int rows, int cols)\fR [inline]\fP"
+
+.SH "Методы"
+.PP 
+.SS "\fBreal\fP & Matrix::operator() (int row, int col)"
+
+.SS "\fBreal\fP Matrix::operator() (int row, int col) const"
+
+.SS "\fBMatrix\fP & Matrix::operator+= (const \fBMatrix\fP & M)"
+
+.SS "void Matrix::print ()"
+
+.SH "Друзья класса и относящимся к классу обозначения"
+.PP 
+.SS "\fBMatrix\fP operator* (const \fBMatrix\fP & A, const \fBMatrix\fP & B)\fR [friend]\fP"
+
+.SS "\fBMatrix\fP operator+ (const \fBMatrix\fP & A, const \fBMatrix\fP & B)\fR [friend]\fP"
+
+.SS "\fBMatrix\fP operator\- (const \fBMatrix\fP & A, const \fBMatrix\fP & B)\fR [friend]\fP"
+
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Matrix из исходного текста\&.

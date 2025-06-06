@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_92c703e60442882f64895a44e24e1d01" xml:lang="ru">
+<title>Содержание директории build/CMakeFiles/4.0.0-rc1/CompilerIdCXX</title>
+<indexterm><primary>Содержание директории build/CMakeFiles/4.0.0-rc1/CompilerIdCXX</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="__c_make_c_x_x_compiler_id_8cpp">CMakeCXXCompilerId.cpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

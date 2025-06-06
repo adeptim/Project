@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmath_1_1_matrix" xml:lang="ru">
+<title>Класс math::Matrix</title>
+<indexterm><primary>math::Matrix</primary></indexterm>
+<para>
+<computeroutput>#include &lt;matrix.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classmath_1_1_matrix_1a499373d65f169f59fed99cb15db7d539">Matrix</link> (int rows, int cols)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link> &amp; <link linkend="_classmath_1_1_matrix_1a2bca2098dc4c1617ac8010c27c55ab66">operator()</link> (int row, int col)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link> <link linkend="_classmath_1_1_matrix_1a95b2ade85e00c5a1f678d440a417578c">operator()</link> (int row, int col) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_classmath_1_1_matrix_1a99ba97122b8fdd54e95290caf80fc8e2">print</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classmath_1_1_matrix">Matrix</link> &amp; <link linkend="_classmath_1_1_matrix_1afc501b514dac6e2882e5c69b4c11a1ea">operator+=</link> (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;M)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Друзья    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmath_1_1_matrix">Matrix</link> <link linkend="_classmath_1_1_matrix_1a39aa78d53e7eb3bcee932266836895e9">operator+</link> (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;B)</para>
+</listitem>
+            <listitem><para><link linkend="_classmath_1_1_matrix">Matrix</link> <link linkend="_classmath_1_1_matrix_1a5665c385ae2843aa1b0434c1e03233a7">operator-</link> (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;B)</para>
+</listitem>
+            <listitem><para><link linkend="_classmath_1_1_matrix">Matrix</link> <link linkend="_classmath_1_1_matrix_1a987ec347864c562e168efb8f273d1cbe">operator*</link> (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp;B)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8"/><section>
+    <title>Matrix()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Matrix</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>Matrix</secondary></indexterm>
+<para><computeroutput>math::Matrix::Matrix ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1a499373d65f169f59fed99cb15db7d539"/><section>
+    <title>Matrix()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Matrix</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>Matrix</secondary></indexterm>
+<para><computeroutput>math::Matrix::Matrix (int rows, int cols)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_classmath_1_1_matrix_1a2bca2098dc4c1617ac8010c27c55ab66"/><section>
+    <title>operator()()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>operator()</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator()</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link> &amp; Matrix::operator() (int row, int col)</computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1a95b2ade85e00c5a1f678d440a417578c"/><section>
+    <title>operator()()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>operator()</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator()</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link> Matrix::operator() (int row, int col) const</computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1afc501b514dac6e2882e5c69b4c11a1ea"/><section>
+    <title>operator+=()</title>
+<indexterm><primary>operator+=</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator+=</secondary></indexterm>
+<para><computeroutput><link linkend="_classmath_1_1_matrix">Matrix</link> &amp; Matrix::operator+= (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; M)</computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1a99ba97122b8fdd54e95290caf80fc8e2"/><section>
+    <title>print()</title>
+<indexterm><primary>print</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>print</secondary></indexterm>
+<para><computeroutput>void Matrix::print ( )</computeroutput></para></section>
+</section>
+<section>
+<title>Друзья класса и относящимся к классу обозначения</title>
+<anchor xml:id="_classmath_1_1_matrix_1a987ec347864c562e168efb8f273d1cbe"/><section>
+    <title>operator*</title>
+<indexterm><primary>operator*</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator*</secondary></indexterm>
+<para><computeroutput><link linkend="_classmath_1_1_matrix">Matrix</link> operator* (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; B)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1a39aa78d53e7eb3bcee932266836895e9"/><section>
+    <title>operator+</title>
+<indexterm><primary>operator+</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator+</secondary></indexterm>
+<para><computeroutput><link linkend="_classmath_1_1_matrix">Matrix</link> operator+ (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; B)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classmath_1_1_matrix_1a5665c385ae2843aa1b0434c1e03233a7"/><section>
+    <title>operator-</title>
+<indexterm><primary>operator-</primary><secondary>math::Matrix</secondary></indexterm>
+<indexterm><primary>math::Matrix</primary><secondary>operator-</secondary></indexterm>
+<para><computeroutput><link linkend="_classmath_1_1_matrix">Matrix</link> operator- (const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; A, const <link linkend="_classmath_1_1_matrix">Matrix</link> &amp; B)<computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+src/<link linkend="_matrix_8h">matrix.h</link>src/<link linkend="_matrix_8cpp">matrix.cpp</link></section>
+</section>

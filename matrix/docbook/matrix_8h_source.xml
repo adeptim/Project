@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_matrix_8h_source" xml:lang="ru">
+<title>matrix.h</title>
+<indexterm><primary>src/matrix.h</primary></indexterm>
+См. документацию.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&lt;vector&gt;</emphasis>
+3 
+4 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespacemath">math</link>
+5 {
+6 &#32;&#32;&#32;&#32;<emphasis role="keyword">typedef</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;<link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link>;
+7 
+8 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>
+9 &#32;&#32;&#32;&#32;{
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;cols_;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;rows_;
+13 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::vector&lt;real&gt;&#32;mvec_;
+14 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+15 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>(){};
+16 
+17 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classmath_1_1_matrix_1a499373d65f169f59fed99cb15db7d539">Matrix</link>(<emphasis role="keywordtype">int</emphasis>&#32;rows,&#32;<emphasis role="keywordtype">int</emphasis>&#32;cols)&#32;:&#32;cols_(cols),&#32;rows_(rows),&#32;mvec_(std::vector&lt;<link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link>&gt;(rows&#32;*&#32;cols))&#32;{};
+18 
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link>&amp;&#32;<link linkend="_classmath_1_1_matrix_1a2bca2098dc4c1617ac8010c27c55ab66">operator()</link>(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;col);
+20 
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_namespacemath_1a872e82c2ed50ad542334c94c311f6990">real</link>&#32;<link linkend="_classmath_1_1_matrix_1a2bca2098dc4c1617ac8010c27c55ab66">operator()</link>(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;col)&#32;<emphasis role="keyword">const</emphasis>;
+22 
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1a99ba97122b8fdd54e95290caf80fc8e2">print</link>();
+24 
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&#32;<link linkend="_classmath_1_1_matrix_1a39aa78d53e7eb3bcee932266836895e9">operator+</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;A,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;B);
+26 
+27 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&#32;<link linkend="_classmath_1_1_matrix_1a5665c385ae2843aa1b0434c1e03233a7">operator-</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;A,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;B);
+28 
+29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&#32;<link linkend="_classmath_1_1_matrix_1a987ec347864c562e168efb8f273d1cbe">operator*</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;A,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;B);
+30 &#32;&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;<link linkend="_classmath_1_1_matrix_1afc501b514dac6e2882e5c69b4c11a1ea">operator+=</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_classmath_1_1_matrix_1adb85d22eaea6df4340328e2c18278ce8">Matrix</link>&amp;&#32;M);
+31 &#32;&#32;&#32;&#32;};
+32 }&#32;<emphasis role="comment">//&#32;namespace&#32;math</emphasis>
+</programlisting></section>

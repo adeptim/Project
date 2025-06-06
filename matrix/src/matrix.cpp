@@ -68,6 +68,7 @@ Matrix math::operator+(const Matrix &A, const Matrix &B)
     for (int i = 0; i < M.mvec_.size(); ++i)
     {
         M.mvec_.at(i) = A.mvec_.at(i) + B.mvec_.at(i);
+       
     }
 
     return M;
@@ -114,3 +115,11 @@ Matrix math::operator*(const Matrix &A, const Matrix &B)
 
     return M;
 }
+ Matrix  &Matrix::operator+= (const Matrix& M)
+  {
+    for (size_t i = 0; i < this->mvec_.size(); ++i)
+    {
+        this->mvec_.at(i) += M.mvec_.at(i);
+    }
+    return *this;
+  };
