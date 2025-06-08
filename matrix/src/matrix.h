@@ -1,32 +1,53 @@
 #pragma once
 #include <vector>
-
+#include <iostream>
+/// @brief определение пространства имен
 namespace math
 {
     typedef double real;
-
+    /// @brief класс Matrix
     class Matrix
     {
     private:
+        /// @brief количество строк
         int cols_;
+        /// @brief количество столбцов
         int rows_;
+        /// @brief вектор хранения матриц
         std::vector<real> mvec_;
+
     public:
-        Matrix(){};
+        /// @brief переменная для ввывода строки при печати
+        std::string type="Matrix is:";
 
-        Matrix(int rows, int cols) : cols_(cols), rows_(rows), mvec_(std::vector<real>(rows * cols)) {};
+        /// @brief конструктор по умолчанию
+        Matrix() {};
+        /// @brief конструктор с заданными парамметрами
+        /// @param rows
+        /// @param cols
+        Matrix(int rows, int cols) : cols_(cols), rows_(rows), mvec_(std::vector<real>(rows * cols)){};
 
-        real& operator()(int row, int col);
+        /// @brief функции класса
+        void print();
+        int rows() const;
+        int cols() const;
 
+        /// @brief переопределение операторов
+        /// @param матрица A
+        /// @param матрица B
+        /// @return матрица
+        friend Matrix operator+(const Matrix &A, const Matrix &B);
+        friend Matrix operator-(const Matrix &A, const Matrix &B);
+        friend Matrix operator*(const Matrix &A, const Matrix &B);
+
+        real &operator()(int row, int col);
         real operator()(int row, int col) const;
 
-        void print();
+        Matrix &operator+=(const Matrix &M);
+        Matrix &operator-=(const Matrix &M);
+        Matrix &operator*=(int k);
 
-        friend Matrix operator+(const Matrix& A, const Matrix& B);
-
-        friend Matrix operator-(const Matrix& A, const Matrix& B);
-
-        friend Matrix operator*(const Matrix& A, const Matrix& B);
-  Matrix& operator+=(const Matrix& M);
+        friend std::ostream &operator<<(std::ostream &out, const Matrix &matrix);
+       friend std::istream &operator>>(std::istream &in, Matrix &matrix);
     };
-} // namespace math
+}
